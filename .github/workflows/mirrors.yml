@@ -6,6 +6,11 @@ on:
       codeberg-repo: 
         required: false
         type: string
+    secrets:
+      CODEBERG_USERNAME:
+        required: false
+      CODEBERG_TOKEN:
+        required: false
 
 jobs:
   to-codeberg:
