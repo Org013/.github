@@ -8,6 +8,6 @@ on:
 
 jobs:
   mirror:
-    uses: org013/.github/workflows/mirrors.yml@main
+    uses: Org013/.github/workflows/mirrors.yml@main
     with:
       codeberg-repo: https://codeberg.org/Org013/.codeberg
