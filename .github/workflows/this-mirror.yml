@@ -9,5 +9,8 @@ on:
 jobs:
   mirror:
     uses: ./.github/workflows/mirrors.yml
+    secrets: 
+      CODEBERG_USERNAME: ${{ secrets.CODEBERG_USERNAME }}
+      CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
     with:
       codeberg-repo: https://codeberg.org/Org013/.codeberg
