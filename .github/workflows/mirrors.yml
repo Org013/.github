@@ -17,10 +17,12 @@ jobs:
     if: ${{ inputs.codeberg-repo }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with: 
           fetch-depth: 0
-      - uses: org013/mirror-action@master 
+      - name: Mirror to Codeberg
+        uses: org013/mirror-action@master 
         with:
           REMOTE: ${{ inputs.codeberg-repo }}
           GIT_USERNAME: ${{ secrets.CODEBERG_USERNAME }}
