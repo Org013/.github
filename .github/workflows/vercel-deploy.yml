@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Deploy to Vercel
-        uses: org013/deploy-to-vercel-action@master
+        uses: LoredDev/deploy-to-vercel-action@master
         with:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
