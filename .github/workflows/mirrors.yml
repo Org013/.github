@@ -22,7 +22,7 @@ jobs:
         with: 
           fetch-depth: 0
       - name: Mirror to Codeberg
-        uses: org013/mirror-action@master 
+        uses: LoredDev/mirror-action@master 
         with:
           REMOTE: ${{ inputs.codeberg-repo }}
           GIT_USERNAME: ${{ secrets.CODEBERG_USERNAME }}
